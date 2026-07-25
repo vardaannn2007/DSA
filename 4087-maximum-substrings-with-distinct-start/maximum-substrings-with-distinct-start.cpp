@@ -5,12 +5,6 @@ public:
         for(char x:s){
             mp[x]++;
         }
-        int count=0;
-        for(auto p:mp){
-            if(p.second>0){
-                count++;
-            }
-        }
-        return count;
+        return mp.size();
     }
 };
